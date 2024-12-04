@@ -1,0 +1,573 @@
+:root {
+    --primary-color: #4C8FFF;
+    --secondary-color: #1E1E1E;
+    --tersiary-color: #777777;
+}
+
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+/* first group css start */
+.firstgroup {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.firstgroup .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10%;
+}
+
+.firstgroup .content h4 {
+    font-size: 40px;
+    color: var(--primary-color);
+}
+
+.firstgroup .content p {
+    font-size: 60px;
+    font-weight: 900;
+    text-align: left;
+    color: var(--secondary-color);
+}
+
+.inputdata {
+    width: 503px;
+    height: 48px;
+}
+
+.inputdata input {
+    width: 364px;
+    height: 48px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.inputdata input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.inputdata button {
+    width: 120px;
+    height: 48px;
+    cursor: pointer;
+    border: none;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    background-color: var(--primary-color);
+    padding: 10px;
+    font-size: 16px;
+}
+
+.inputdata button:hover {
+    transform: scale(1.1);
+    background-color: #0b61f7;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.firstgroup .content .images {
+    display: flex;
+    padding-top: 50px;
+}
+
+.firstgroup .content .images img {
+    margin-right: 40px;
+}
+
+.firstgroup .content .images img:hover {
+    transform: scale(1.1);
+}
+
+.firstgroup .mobile {
+    height: 100%;
+    width: 100%;
+    padding-right: 10%;
+}
+
+.firstgroup .mobile img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1024px) {
+    .firstgroup {
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .firstgroup .content,
+    .firstgroup .mobile {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .firstgroup .content h4 {
+        font-size: 30px;
+    }
+
+    .firstgroup .content p {
+        font-size: 40px;
+    }
+
+    .inputdata {
+        width: 100%;
+    }
+
+    .inputdata input {
+        width: 80%;
+    }
+
+    .inputdata button {
+        width: 80%;
+    }
+
+    .firstgroup .content .images {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .firstgroup .content .images img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .firstgroup .content {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .firstgroup .content h4 {
+        font-size: 24px;
+    }
+
+    .firstgroup .content p {
+        font-size: 32px;
+    }
+
+    .firstgroup .mobile img {
+        width: 150px;
+        height: 175px;
+    }
+
+    .inputdata {
+        display: none;
+    }
+
+    .firstgroup .content .images {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .firstgroup .content h4 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .firstgroup .content p {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .firstgroup .mobile img {
+        width: 123px;
+        height: 158px;
+    }
+
+    .inputdata {
+        display: none;
+    }
+
+    .firstgroup .content .images {
+        display: none;
+    }
+}
+/* first group css end */
+
+
+
+/* first bg css */
+.firstbg {
+    background-color: #4C8FFF;
+    top: 0;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.firstbg .uploadfile, .firstbg .setprice, .firstbg .sendlink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.firstbg .uploadfile .text, .firstbg .setprice .text, .firstbg .sendlink .text {
+    padding: 0 0 0 20px;
+}
+
+@media (max-width: 768px) {
+    .firstbg .uploadfile, .firstbg .setprice, .firstbg .sendlink {
+        width: 100%;
+    }
+
+    .firstbg .uploadfile img, .firstbg .setprice img, .firstbg .sendlink img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .firstbg .text h4 {
+        font-size: 16px;
+    }
+
+    .firstbg .text p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .firstbg .uploadfile, .firstbg .setprice, .firstbg .sendlink {
+        width: 100%;
+    }
+
+    .firstbg .uploadfile img, .firstbg .setprice img, .firstbg .sendlink img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .firstbg .text h4 {
+        font-size: 8px;
+    }
+
+    .firstbg .text p {
+        font-size: 6px;
+    }
+}
+/* first bg css end */
+
+
+
+/* second group css start */
+.secondgroup {
+    height: 100%;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.secondgroup .text {
+    text-align: center;
+}
+
+.secondgroup .text h3 {
+    font-size: 36px;
+}
+
+.secondgroup p {
+    font-size: 18px;
+    color: var(--tersiary-color);
+    text-align: left;
+}
+
+.secondgroup .imagetext {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.secondgroup .imagetext .firstdata, .secondgroup .imagetext .seconddata {
+    height: 100%;
+    width: 100%;
+}
+
+.secondgroup .imagetext .firstdata {
+    padding-left: 10%;
+}
+
+.secondgroup .imagetext .seconddata {
+    padding-right: 10%;
+}
+
+.secondgroup .imagetext h2 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.secondgroup .imagetext img {
+    width: 80%;
+    border-radius: 10%;
+}
+/* second group css end */
+
+
+
+/* second bg css start */
+.secondbg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 5%;
+    padding: 5% 0;
+}
+
+.secondbg::after{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    content: "";
+    background-image: url("./images/joinnow.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+    left: 0;
+}
+
+.secondbg::before{
+    position: absolute;
+    top: 0;
+    background-color: #0b61f7;
+    height: 100%;
+    width: 100%;
+    content: "";
+    z-index: -1;
+    opacity: 0.6;
+    left: 0;
+}
+
+.secondbg img {
+    display: block;
+    margin: auto;
+    width: 105px;
+    height: 45px;
+}
+
+.secondbg h2, p {
+    color: #ffffff;
+    text-align: center;
+}
+.secondbg button {
+    display: block;
+    margin: auto;
+    border-style: none;
+    width: 160px;
+    height: 54px;
+    font-weight: 900;
+}
+/* second bg css end */
+
+
+
+/* subscription plan css start */
+.subscriptionplan {
+    height: 100%;
+    width: 100%;
+}
+
+.subscriptionplan h2, .subscriptionplan p {
+    text-align: center;
+}
+
+.subscriptionplan h2 {
+    font-size: 30px;
+    color: #1E1E1E;
+}
+
+.subscriptionplan p {
+    font-size: 15px;
+    color: var(--tersiary-color);
+}
+
+.subscriptionplan .plans {
+    display: flex;
+    justify-content: center;
+}
+
+.subscriptionplan .plans .Individual {
+    padding: 30px;
+    margin-right: 20px;
+    text-align: center;
+    border: 1px solid #707070;
+}
+
+.subscriptionplan .plans .Individual:hover {
+    transform: scale(1.05);
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.subscriptionplan .plans .Individual li {
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.subscriptionplan .plans .Individual button {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+}
+/* subscription plan css end */
+
+
+
+/* review css start */
+.review {
+    padding: 20px;
+    text-align: center;
+}
+
+.review a {
+    text-decoration: none;
+}
+
+.review h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.review .content {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.review .content .thought {
+    margin-right: 20px;
+}
+
+.review .content .thought p {
+    background-color: #7d7d7d;
+    padding: 20px;
+    text-align: left;
+}
+
+.review .content .thought .userdata {
+    display: flex;
+    justify-content: start;
+}
+/* review css end */
+
+
+
+/* ask question css start */
+.askquestion {
+    margin: 2%;
+    padding: 20px 50px;
+    background-color: #F4F6F7;
+}
+
+.askquestion h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.askquestion .question {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.askquestion .question .left, .askquestion .question .right {
+    padding-right: 20px;
+}
+
+.askquestion .question .left p, .askquestion .question .right p {
+    font-size: 18px;
+    text-align: left;
+    color: var(--tersiary-color);
+}
+
+.askquestion p {
+    color: var(--tersiary-color);
+}
+
+.askquestion p a {
+    text-decoration: none;
+}
+/* ask question css end */
+
+
+
+/* footer css start */
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 5%;
+    background-color: var(--primary-color);
+}
+
+.footer .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10%;
+    width: 40%;
+}
+
+.footer .content a {
+    padding-right: 40px;
+}
+
+.footer .content p {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: left;
+}
+
+.footer .mobile {
+    padding-right: 10%;
+    width: 40%;
+}
+
+.footer .mobile img {
+    width: 100%;
+    height: auto;
+}
+
+.footer .mobile .navbar {
+    padding: 10px 20px;
+}
+
+.footer .mobile .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer .mobile .navbar-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer .mobile .navbar-links li a:hover {
+    color: #ffd700;
+}
+/* footer css end */
